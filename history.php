@@ -70,7 +70,7 @@ if(!isset($_SESSION['userid'])){
         <?php 
         $sql = mysqli_query($dbcon, "SELECT * FROM customers WHERE cus_id='" . $_SESSION['userid'] . "'");
         $row = mysqli_fetch_array($sql);
-        echo "ชื่อ " . $row['fname'] . "" . $row['lname'];
+        echo "ชื่อ " . $row['fname'] . "_" . $row['lname'];
         ?><br>
 
         <!-- จาก -->

@@ -41,7 +41,8 @@ ul li:last-child:hover a {
 @media screen and (max-width: 480px) {
     
     nav{
-        background-color: #4d4d4d;
+        background-color: #4d4d4d27;
+        padding-bottom: 10px;
     }
     ul,ul>a{
         text-align: center;
@@ -58,7 +59,7 @@ ul li:last-child:hover a {
     }
     li a{
         color: white;
-        padding: 20px;
+   
     
     
     }
@@ -139,7 +140,8 @@ ul li:last-child:hover a {
 }
 @media screen and (min-width: 481px) and (max-width: 980px) {
     nav{
-        background-color: #4d4d4d;
+        background-color: #4d4d4d96;
+        padding-bottom: 50px;
     }
     ul,ul>a{
         text-align: center;
@@ -155,7 +157,7 @@ ul li:last-child:hover a {
     }
     li a{
         color: white;
-        padding: 20px;
+
     
     
     }

@@ -54,9 +54,11 @@ if (!isset($_SESSION['userid'])) {
     $sql = mysqli_query($dbcon, "SELECT ticket_id, depart_date, tprice FROM tickets");
 
     $total_items = mysqli_num_rows($sql);
-    $total_pages = ceil($total_items / $items_per_page);
+    //print_r($total_items); //total_item คือ เรียก fuc เพื่อนับ จน. ข้อมูลทั้งหมด  ล่าสุด = 43
+    $total_pages = ceil($total_items / $items_per_page); //จน ปุ่ม
 
     $offset = ($page - 1) * $items_per_page;
+    //print_r($total_items); 
 
     $sql = mysqli_query($dbcon, "SELECT ticket_id, depart_date, tprice FROM tickets LIMIT $offset, $items_per_page");
 
